@@ -11,7 +11,7 @@ export function Home() {
   const history = useHistory();
   const [movieList,setMovieList] = useState([])
   const token = localStorage.getItem('token')
-
+//eslint-disable-next-line
   useEffect( async()=>{
     var decoded = jwt.decode(token)
     console.log(decoded)
