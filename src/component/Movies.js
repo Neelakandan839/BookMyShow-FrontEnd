@@ -6,6 +6,7 @@ import axios from 'axios';
 
 export function Movies() {
   const [movieList,setMovieList] = useState([])
+  //eslint-disable-next-line
   useEffect(async ()=>{
       const response = await axios.get('https://bookmyshow-i.herokuapp.com/movie/getmovie');
       setMovieList(response.data);
