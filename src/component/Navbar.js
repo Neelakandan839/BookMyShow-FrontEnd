@@ -93,7 +93,7 @@ ScrollTop.propTypes = {
 
 export default function BackToTop(props) {
   return (
-  <>  {userType() == "Admin" ? ( <ClippedDrawer/>):(
+  <>  {userType() === "Admin" ? ( <ClippedDrawer/>):(
     <React.Fragment>
       <CssBaseline />
       <AppBar>
