@@ -5,6 +5,7 @@ import axios from 'axios';
 
 export function Theatres(props){
     const [theatreList,setTheatreList] = useState([])
+    //eslint-disable-next-line
   useEffect(async ()=>{
       var response = await axios.get('https://bookmyshow-i.herokuapp.com/theatre/gettheatre');
       setTheatreList(response.data);
