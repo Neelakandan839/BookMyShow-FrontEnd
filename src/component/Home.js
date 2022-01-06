@@ -21,6 +21,7 @@ export function Home() {
       var response = await axios.get('https://bookmyshow-i.herokuapp.com/movie/getmovie');
       setMovieList(response.data);
     }
+    //eslint-disable-next-line
     },[])
   
   return (
