@@ -1,38 +1,113 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+i{
+  padding-left: 10px;
+}
+img{
+  width: 100%;
+  margin-top: 60px;
+}
+.signup{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.signup-form{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.login-form{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+}
+h1{
+  border-bottom: 2px solid orange;
+}
+h2{
+  border-bottom: 2px solid orange;
+  font-size: 30px;
+}
+.homepage{
+  display: flex;
+  flex-direction: column;
+}
+.movie,.theatre,.events{
+  display: flex;
+  justify-content: center;
+}
+.movie-pic{
+  width: 280px;
+  height:350px;
+  margin-top: 0;
+  border-radius: 5px;
+}
+.movie-card{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  align-content: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card{
+  box-shadow: grey 2px 4px 5px 2px;
+  gap: 5px;
+  margin:10px 5px 30px 5px ;
+  border-radius: 10px;
+  overflow: hidden;
+}
+h3{
+  margin: 10px 15px;
+  font-size: 20px;
+  text-align: left;
+}
+p{
+  text-align: left;
+  margin: 10px 15px;
+  font-size: 16px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.seats{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:center;
+  margin-bottom: 70px;
+}
+
+.seat-division{
+  display: flex;
+  width: 1000px;
+}
+.seat-portion-1{
+  margin:0 50px;
+}
+
+.seat-portion-2{
+  margin:0 50px;
+  margin-bottom: 20px;
+}
+.footer{
+  background:black;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.movie-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.theatre-input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
