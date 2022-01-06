@@ -181,6 +181,7 @@ function Bookings(){
 
 function Contacts(){
   const [contactList,setContactList] = React.useState([])
+  //eslint-disable-next-line
   useEffect(async ()=>{
       const response = await axios.get('https://bookmyshow-i.herokuapp.com/contact/getcontact');
       setContactList(response.data);
