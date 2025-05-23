@@ -17,7 +17,7 @@ const handleChange = (prop) => (event) => {
 const submit = async(e)=>{
  e.preventDefault()
 try {
-var response = await axios.post("https://bookmyshow-i.herokuapp.com/contact/savecontact",user )
+var response = await axios.post("https://book-my-show-backend-rose.vercel.app/contact/savecontact", user )
 console.log(response)
 alert('Successfully send')
 }
