@@ -46,7 +46,7 @@ export function Login() {
    const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      var response = await axios.post('https://bookmyshow-i.herokuapp.com/auth/login', {
+      var response = await axios.post('https://book-my-show-backend-rose.vercel.app/auth/login', {
         type: values.type,
         email: values.email,
         password: values.password
