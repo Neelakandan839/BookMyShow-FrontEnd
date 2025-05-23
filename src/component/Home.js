@@ -18,7 +18,7 @@ export function Home() {
     if(decoded.exp *1000 <= Date.now()){
        history.push('/')
     }else{
-      var response = await axios.get('https://bookmyshow-i.herokuapp.com/movie/getmovie');
+      var response = await axios.get('https://book-my-show-backend-rose.vercel.app/movie/getmovie');
       setMovieList(response.data);
     }
     //eslint-disable-next-line
