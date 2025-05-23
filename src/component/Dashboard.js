@@ -77,7 +77,7 @@ function Movie(){
    const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      var response = await axios.post('https://bookmyshow-i.herokuapp.com/movie/savemovie', {
+      var response = await axios.post('https://book-my-show-backend-rose.vercel.app/movie/savemovie', {
         name: values.name,
         pic: values.pic,
         certificate: values.certificate,
@@ -139,7 +139,7 @@ function Theatre(){
    const handleSubmit = async (e) => {
     e.preventDefault()
     try {
-      var response = await axios.post('https://bookmyshow-i.herokuapp.com/theatre/savetheatre', {
+      var response = await axios.post('https://book-my-show-backend-rose.vercel.app/theatre/savetheatre', {
         name: values.name,
         address: values.address
       })
@@ -183,7 +183,7 @@ function Contacts(){
   const [contactList,setContactList] = React.useState([])
   //eslint-disable-next-line
   useEffect(async ()=>{
-      const response = await axios.get('https://bookmyshow-i.herokuapp.com/contact/getcontact');
+      const response = await axios.get('https://book-my-show-backend-rose.vercel.app/contact/getcontact');
       setContactList(response.data);
     },[])
     return(
