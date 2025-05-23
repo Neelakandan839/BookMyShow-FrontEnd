@@ -49,7 +49,7 @@ export function Signup() {
    const egister = async(e)=>{
      e.preventDefault()
    try {
-    var response = await axios.post("https://bookmyshow-i.herokuapp.com/auth/register",user )
+    var response = await axios.post("https://book-my-show-backend-rose.vercel.app/auth/register", user )
     console.log(response)
     if(response.data){
       await localStorage.setItem("token",response.data)
